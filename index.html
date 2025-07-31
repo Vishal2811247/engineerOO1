@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal M Boragi | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fa;
+      color: #333;
+    }
+    nav {
+      background: #0a192f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #64ffda;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #1f1c2c, #928dab);
+      color: white;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #64ffda;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: slideUp 1s ease;
+    }
+    h2 {
+      font-size: 2rem;
+      border-left: 5px solid #64ffda;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+    .cards, .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+    }
+    .skills-grid span {
+      background: #e0f7fa;
+      padding: 10px 15px;
+      border-radius: 20px;
+      margin: 5px;
+      font-weight: 500;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a192f;
+      color: #fff;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">Vishal M Boragi</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certs">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <img src="vishal.jpg" alt="Vishal M Boragi" class="profile-pic"/>
+    <h1>Hi, I'm Vishal</h1>
+    <p>Electronics & Communication Engineering Student | Tech Enthusiast</p>
+  </header>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>To implement and execute new technologies and gain a positive dependable balance in a business domain that encourages innovation and predicts industrial trends.</p>
+  </section>
+
+  <section id="education" class="section">
+    <h2>Education</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>B.Tech in ECE</h3>
+        <p>REVA University, Bangalore – CGPA: 6.27 (2025)</p>
+      </div>
+      <div class="card">
+        <h3>12th Science</h3>
+        <p>Tungal PU College, Vijayapura – 81.6% (2021)</p>
+      </div>
+      <div class="card">
+        <h3>10th CBSE</h3>
+        <p>Daffodils School, Vijayapura – 81.2% (2019)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Web App:</strong> Built using HTML/CSS/JS and deployed via Azure CI/CD.</li>
+      <li><strong>Solar Tracking E-vehicle:</strong> IoT + GSM + Arduino-based team project.</li>
+      <li><strong>Electronic Buzzer System:</strong> Microcontroller logic implementation.</li>
+      <li><strong>Weather Monitoring System:</strong> IoT-based team project for climate data.</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>C++ (Basics)</span>
+      <span>SQL</span>
+      <span>HTML & CSS</span>
+      <span>Azure DevOps</span>
+      <span>GitHub</span>
+      <span>Microsoft Azure</span>
+    </div>
+  </section>
+
+  <section id="certs" class="section">
+    <h2>Certifications & Achievements</h2>
+    <ul>
+      <li>Research papers published at IEEE Conferences (2024, 2025)</li>
+      <li>Azure and DevOps Course Completion</li>
+      <li>Basics of Verilog and VLSI</li>
+      <li>Best Project Award at Aavishkaar 2024</li>
+      <li>Inter-school Cricket Representative (2019)</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:Vishalboragi247@gmail.com">Vishalboragi247@gmail.com</a></p>
+    <p>Phone: +91-7483073499</p>
+    <p>Languages Known: English, Hindi, Kannada</p>
+    <p>Hobbies: Sports, Chess, Day-Trading, Investment</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vishal M Boragi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
